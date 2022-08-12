@@ -9,7 +9,7 @@
 <body>
 
     <p>Right click inspect, console view</p>
-    <ul><p>JS notes (part 1 numbers):</p>
+    <ul><h1>JS notes (part 1 numbers):</h1>
 <li>camelCase for let</li>
 <li>UPPERCASE for const iff known before aka hard-coded</li>
 <li>else camelCase (eg if calculated)</li>
@@ -74,6 +74,33 @@ document.write(percentage);
   <li>.trim() removes whitespace</li>
   <li>.padStart(n,"") , .padEnd(n,"")</li>
   <li> .split("v") converst to array split on v eg space, comma, pipe</li>
-  <li></li>
+  </ul>
+
+  <ul><h1>JS notes (Part 3 Conditionals):</h1>
+
+    <li>≠ = !=</li>
+    <li>Strings letter by letter eg alert( 'Glow' > 'Glee' ); // true</li>
+    <li>Strings longer is larger, lexicographical order</li>
+    <li>a > A</li>
+    <li> === strict equality checks without type conversion</li>
+    <li>nb alert( null == undefined ); // true, alert( null === undefined ); // false</li>
+    <li>comparisons turn null to number (0)</li>
+    <li>Comparison operators return a boolean value.</li>
+    <li>if (condition1) {code1} else if (condition2) {code2} else {code3} </li>
+    <li>Can be nested</li>
+    <li>|| (OR), && (AND), ! (NOT), ?? (Nullish Coalescing)</li>
+    <li> a chain of OR || returns the first truthy value or the last one if no truthy value is found</li>
+    <li>can 'short circuit' eg false || alert("printed"); only shows if falsy argument</li>
+    <li>AND && finds first falsy</li>
+    <li>AND has higher precedence than OR</li>
+    <li>! NOT converts to boolean, returns oposite</li>
+    <li>!! double NOT used for converting to boolean</li>
+    <li>! NOT has highest precedence</li>
+    <li>switch (expression) {case1: code1 break; case2: code2 break; default: code</li>
+      <li>Ternary operator ; condition ? run this code : run this code instead</li>
+    </ul>
+
+    <ul><h1>JS notes (Part 4 Dev Tools):</h1>
+      <li></li>
 </body>
 </html>
