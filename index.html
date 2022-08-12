@@ -9,7 +9,7 @@
 <body>
 
     <p>Right click inspect, console view</p>
-    <ul><p>JS notes:</p>
+    <ul><p>JS notes (part 1 numbers):</p>
 <li>camelCase for let</li>
 <li>UPPERCASE for const iff known before aka hard-coded</li>
 <li>else camelCase (eg if calculated)</li>
@@ -22,10 +22,11 @@
 <li>Infinity is a number (>64bit), = x/0</li>
 <li>with new, can define numbers as objects (but avoid)</li>
 <li> == equal === not equal, objects are never equal (false)</li>
-
+<li>NaN is a number</li>
+<li>BigInt (ending in n) for values over 2 ^ 53 -1</li>
 </ul>
 
-<h1>exercises</h1>
+<p>exercises</p>
 
   <script>
     // Your JavaScript goes here!
@@ -55,6 +56,24 @@ let percentage = actual / max;
 document.write(percentage);
 
 </script>
+<ul><h1>JS notes (Part 2 strings):</h1>
 
+  <li>backquotes `can embed another ${str}`</li>
+  <li>embed variables and expressions into string wrap ${}</li>
+  <li>null = null pointer, reference to non-existant object, unknown</li>
+  <li>undefined = value is not assigned</li>
+  <li>assign null, not undefined to variables</li>
+  <li>\' escape character eg 'I\'ve got to write a string'</li>
+  <li>` backtick for concatenating, template literal `${one}${two}`</li>
+  <li>nb respects linebreaks in code (otherwise use \n </li>
+  <li>toString() for converting eg numbers</li>
+  <li>slice(start, end), substring(start, end), substr(start, length)</li>
+  <li>nb strats from 0, -ve from end of string</li>
+  <li>.replace("old", "new") created new string, only first instance of old</li>
+  <li>can ammend /old/i or /old/g for case insensitive and all </li>
+  <li>.trim() removes whitespace</li>
+  <li>.padStart(n,"") , .padEnd(n,"")</li>
+  <li> .split("v") converst to array split on v eg space, comma, pipe</li>
+  <li></li>
 </body>
 </html>
