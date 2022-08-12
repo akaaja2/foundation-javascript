@@ -101,6 +101,64 @@ document.write(percentage);
     </ul>
 
     <ul><h1>JS notes (Part 4 Dev Tools):</h1>
-      <li></li>
+      <li>console.warn expand to see stack trace</li>
+      <li>console.error</li>
+      <li>sources -> event listener breakpoints -> mouse -> click</li>
+      <li>step over next function call</li>
+      <li>click on code line # , devtools always pauses</li>
+      </ul>
+
+      <ul><h1>JS notes (Part 6 Functions):</h1>
+        <li>parameter = argument = property = attribute</li>
+        <li>default values by = '' after parameter name</li>
+        <li>anonymous function aka function expression are not hoisted</li> 
+        <li> aka [fat] arrow functions (event) => </li>  
+        <li>(...args) => expression</li> 
+        <li>(...args) => { body } needs explicit return</li> 
+        <li>function variables have local scope</li>
+        <li>never add new line between return and value, at least ( </li>
+        <li>functions are actions, name using verb</li>
+        <li>functions==comments, should do exactly one thing</li>
+        <li>prioritise function declaration (function) over expression (let)</li>
+        <li>Call stack is LIFO</li>
+        <li>Single treaded language</li>
+
+
+        </ul>
+
+        <p>exercises</p>
+        <br>
+        <p>add7</p>
+        <script>
+          let add7 = (a) => a + 7;
+          console.log(add7(3));
+          document.write(add7(3));
+          </script>
+          <p>multiply</p>
+          <script>
+            let multi = (a, b) => a*b;
+            document.write(multi(3,4));
+          </script>
+          <p>capitalize</p>
+          <script>
+            function capitalize(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();}
+    document.write(capitalize('uWu'));
+          </script>        
+<p>lastLetter</p>
+<script>
+function lastLetter(string) {
+  return string.slice(-1);}
+  document.write(lastLetter('abcd'));
+</script>
+  <ul><h1>JS notes (Part 7 Problem Solving):</h1>
+    <li>performs set of tasks and meets all stated constraints</li>
+    <li>write down problem, able to explain in plain English</li>
+    <li>Plan, sketch on paper. What inputs, desired output, and how to get there</li>
+    <li>create pseudocode algorithm in natural language</li>
+    <li>from pseudocode, create subproblem list, attack with code</li>
+    <li>Decomposition to deal with complexity</li>
+    </ul>
+
 </body>
 </html>
